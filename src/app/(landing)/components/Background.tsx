@@ -347,8 +347,10 @@ const Background: React.FC = () => {
       if (width !== window.innerWidth || height !== window.innerHeight) {
         width = window.innerWidth;
         height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
+        if (canvas) {
+          canvas.width = width;
+          canvas.height = height;
+        }
         // reinitialize particles to fit new dimensions elegantly
         particlesRef.current = initMeteorParticles(35, width, height);
       }
@@ -386,8 +388,10 @@ const Background: React.FC = () => {
     function setup() {
       width = window.innerWidth;
       height = window.innerHeight;
-      canvas.width = width;
-      canvas.height = height;
+      if (canvas) {
+        canvas.width = width;
+        canvas.height = height;
+      }
       // 35 particles for clean meteor shower effect
       particlesRef.current = initMeteorParticles(35, width, height);
       animationFrameRef.current = requestAnimationFrame(animate);
@@ -399,8 +403,10 @@ const Background: React.FC = () => {
       // resize handled inside animate for smoothness
       width = window.innerWidth;
       height = window.innerHeight;
-      canvas.width = width;
-      canvas.height = height;
+      if (canvas) {
+        canvas.width = width;
+        canvas.height = height;
+      }
       if (particlesRef.current.length > 0) {
         // adjust positions proportionally
         for (const p of particlesRef.current) {
