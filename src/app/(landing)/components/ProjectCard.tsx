@@ -130,7 +130,11 @@ export default function ProjectCard({
               {/* Contenido del Video */}
               <div className="relative flex-1 bg-black/40">
                 {project.desktopVideo ? (
-                  <video src={project.desktopVideo} className="w-full h-full object-cover" autoPlay muted loop playsInline />
+                  project.desktopVideo.toLowerCase().endsWith('.gif') ? (
+                    <img src={project.desktopVideo} alt={`${project.name} demo`} className="w-full h-full object-cover" />
+                  ) : (
+                    <video src={project.desktopVideo} className="w-full h-full object-cover" autoPlay muted loop playsInline />
+                  )
                 ) : (
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-white/20">
                      <svg className="w-10 h-10 mb-3 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
@@ -150,7 +154,7 @@ export default function ProjectCard({
               <h4 className="text-sm font-medium text-white/70">
                 Vista previa <span className="text-white/30 text-xs ml-1">({project.images.length})</span>
               </h4>
-              <button
+              {/* <button
                 onClick={() => onAddImage(index)}
                 className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border border-white/15 text-white/50 hover:text-white hover:border-white/30 transition-all"
                 title="Agregar recurso"
@@ -159,7 +163,7 @@ export default function ProjectCard({
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                 </svg>
                 Añadir
-              </button>
+              </button> */}
             </div>
 
             {/* Bento Grid layout */}
@@ -214,15 +218,15 @@ export default function ProjectCard({
                   return (
                     <button
                       key={i}
-                      onClick={() => onAddImage(index)}
+                      // onClick={() => onAddImage(index)}
                       className={`${gClass} rounded-xl border-2 border-dashed border-white/5 hover:border-white/20 flex flex-col items-center justify-center text-white/20 hover:text-white/40 transition-colors bg-white/[0.01] hover:bg-white/[0.03] group/drop`}
                     >
                       <svg className="w-5 h-5 mb-1 opacity-50 group-hover/drop:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                       </svg>
-                      {gClass.includes("row-span-1") ? null : (
+                      {/* {gClass.includes("row-span-1") ? null : (
                         <span className="text-[10px] font-medium tracking-wide uppercase opacity-0 group-hover/drop:opacity-100 transition-opacity hidden sm:block">Añadir</span>
-                      )}
+                      )} */}
                     </button>
                   );
                 }

@@ -22,7 +22,7 @@ const skills = [
   {
     category: "Backend",
     icon: "⬡",
-    techs: ["Express", "FastAPI", "Django", ".NET", "MySQL", "PostgreSQL", "MongoDB", "Neon", "Axum", "NestJS", "Bun", "Supabase", "Firebase"],
+    techs: ["Express", "FastAPI", "Django", ".NET", "MySQL", "PostgreSQL", "MongoDB", "Neon", "Axum", "NestJS", "Bun", "Supabase", "Firebase", "Qdrant"],
   },
   {
     category: "DevOps / Cloud & Servers",
@@ -109,10 +109,11 @@ const projects: Project[] = [
     tags: ["Flutter", "Arquitectura en capas", "Supabase", "Docker", "Windows/Linux/Mac"],
     status: "Live",
     scale: "Sistema Desktop Clinico",
-    images: ["/DatabaseClinica.png", "/clinica/DatabaseClinica.png"],
+    images: ["/clinica/LoginClinica.png", "/clinica/DatabaseClinica.png", "/clinica/paciente.png", "/clinica/agenda.png"],
     color: "from-sky-500/10 to-blue-600/10",
     accent: "#0ea5e9",
     url: "#",
+    desktopVideo: "/clinica/videoclinica.mp4",
   },
   // {
   //   name: "Talkify",
@@ -127,17 +128,19 @@ const projects: Project[] = [
   //   accent: "#6366f1",
   // },
   {
-    name: "Serena Spa",
-    tagline: "Web para Spa de Montaña en Jarabacoa",
+    name: "Talkify",
+    tagline: "Web para intercambio de Idiomas",
     description:
-      "Aplicación móvil premium para un spa de lujo en Jarabacoa, destino turístico de montaña en Rep. Dominicana. Reserva de tratamientos, exploración de servicios, programas de fidelidad, promociones exclusivas y guía del destino integrada.",
-    tags: ["NextJS", "TypeScript", "Tailwind CSS", "Neon SQL", "Google Maps"],
+      "Talkify es una plataforma digital diseñada para facilitar el aprendizaje de idiomas mediante la interacción directa entre personas de distintas lenguas y culturas. A diferencia de las metodologías tradicionales, Talkify integra videollamadas, chat y herramientas educativas en un solo entorno, fomentando la práctica real y la inmersión lingüística. Su objetivo principal es crear un espacio seguro, accesible y motivador donde los usuarios puedan desarrollar habilidades comunicativas a través de experiencias sociales auténticas.(The API for the picture profile was closed btw)",
+    tags: ["React", "ExpressJS", "Tailwind CSS", "MongoDB", "noSQL", "Cloudinary", "WebSockets", "JWT", "tanstack", "Axios", "DaisyUI", "Stream-io"],
     status: "Completado",
     scale: "Web",
-    images: [],
-    color: "from-rose-200/10 to-stone-100/10",
-    accent: "#f6e0e0ff",
-    url: "https://serena-spa-web.vercel.app",
+    images: ["/talkify/videocall1.png", "/talkify/DFDTalkify.png", "/talkify/ERTalkify.png", "/talkify/chat.png"], 
+    color: "from-lime-200/10 to-stone-100/10",
+    accent: "#83ae75ff",
+    url: "https://talkify-103i.onrender.com",
+    desktopVideo: "/talkify/videoTalk.mp4",
+
   },
   {
     name: "SLAM ",
@@ -147,10 +150,12 @@ const projects: Project[] = [
     tags: ["Python", "ROS", "OpenCV", "C++", "Robotics"],
     status: "Completado",
     scale: "Investigación Académica",
-    images: [],
+    images: ["slam/SlamAplicaciones.png","slam/quizz.png","slam/SlamArq.png","slam/videolidar.gif"],
     color: "from-rose-500/10 to-pink-600/10",
     accent: "#f43f5e",
     url: "https://slam-eta.vercel.app",
+    desktopVideo: "slam/SlamVideo.mp4",
+    
   },
   // {
   //   name: "Moodle UCATECI",
@@ -438,12 +443,25 @@ export default function Portfolio() {
               <Planet>
                 {/* 1. Top Left Card - Amber */}
                 <div 
-                  className="absolute -top-2 -left-4 md:-left-12 w-44 p-4 rounded-2xl orbit-card border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-orange-600/5 hover:border-amber-500/40 transition-all pointer-events-auto"
+                  className="absolute -top-2 -left-4 md:-left-16 w-56 p-5 rounded-2xl orbit-card border border-amber-500/20 bg-gradient-to-br from-amber-500/10 to-orange-600/5 hover:border-amber-500/40 transition-all pointer-events-auto"
                   style={{ animation: 'float-1 6s ease-in-out infinite' }}
                 >
                   <div className="absolute inset-0 bg-amber-500/5 blur-xl rounded-2xl pointer-events-none" />
-                  <div className="relative z-10 text-3xl md:text-4xl font-black text-amber-400 mb-1 drop-shadow-[0_0_8px_rgba(245,158,11,0.4)]"> ∑8+9+7</div>
-                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Proyectos </div>
+                  <div className="relative z-10 flex items-center justify-center font-serif text-2xl md:text-3xl font-bold text-amber-400 mb-2 drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]">
+                    <span className="flex flex-col items-center justify-center mr-1.5">
+                      <span className="text-xs font-bold mb-[-5px] z-10">∞</span>
+                      <span className="text-5xl font-normal leading-none" style={{ transform: "scaleY(1.2)" }}>∫</span>
+                      <span className="text-xs font-bold mt-[-5px] z-10">-∞</span>
+                    </span>
+                    <span className="flex items-start ml-1">
+                      <span className="italic">e</span>
+                      <sup className="text-sm md:text-base tracking-tighter mt-1">-x²</sup>
+                    </span>
+                    <span className="italic ml-2">dx</span>
+                    <span className="mx-3">=</span>
+                    <span>√π</span>
+                  </div>
+                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Integral Gaussiana </div>
                   <div className="relative z-10 text-[10px] text-white/40">En producción</div>
                 </div>
 
@@ -535,7 +553,7 @@ export default function Portfolio() {
                 <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Portafolio</span>
                 <h2 className="text-4xl font-bold text-white mt-2">Proyectos</h2>
                 <p className="text-white/40 mt-2 text-sm max-w-md">
-                  Cada proyecto es una solución real a un problema real. Explóralos, mira los detalles y agrega imágenes.
+                  Cada proyecto es una solución real a un problema real. Explóralos, mira los detalles.
                 </p>
               </div>
               <div className="flex gap-4 text-xs text-white/30">
