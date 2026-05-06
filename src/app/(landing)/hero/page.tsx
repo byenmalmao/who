@@ -47,10 +47,11 @@ const projects: Project[] = [
     tags: ["React", "Javascript","Express", "MongoDB", "WebSockets", "Cloudflare"],
     status: "Live",
     scale: "Plataforma Web de Referidos",
-    images: ["/landingJoseate.png"],
+    images: ["/joseate/HomeJoseate.png","/joseate/Jobs.png","/joseate/Apply.png","/joseate/Chat.png"],
     color: "from-amber-500/10 to-orange-600/10",
     accent: "#f59e0b",
     url: "https://joseate.com",
+    desktopVideo: "/joseate/main.mp4",
   },
   // {
   //   name: "Ninja Monitor",
