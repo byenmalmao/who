@@ -136,7 +136,7 @@ const projects: Project[] = [
     tags: ["React", "ExpressJS", "Tailwind CSS", "MongoDB", "noSQL", "Cloudinary", "WebSockets", "JWT", "tanstack", "Axios", "DaisyUI", "Stream-io"],
     status: "Completado",
     scale: "Web",
-    images: ["/talkify/videocall1.png", "/talkify/DFDTalkify.png", "/talkify/ERTalkify.png", "/talkify/chat.png"], 
+    images: ["/talkify/videocall1.png", "/talkify/DFDTalkify.png", "/talkify/ERTalkify.png", "/talkify/Chat.png"], 
     color: "from-lime-200/10 to-stone-100/10",
     accent: "#83ae75ff",
     url: "https://talkify-103i.onrender.com",
