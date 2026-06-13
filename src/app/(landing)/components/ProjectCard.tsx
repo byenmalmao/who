@@ -5,7 +5,7 @@ export type Project = {
   tagline: string;
   description: string;
   tags: string[];
-  status: "Live" | "En desarrollo" | "Completado";
+  status: "Live" | "In Development" | "Completed";
   scale: string;
   images: string[];
   desktopVideo?: string;
@@ -20,8 +20,8 @@ export const isVideo = (url: string) => /\.(mp4|webm|ogg)$/i.test(url);
 export function StatusBadge({ status }: { status: Project["status"] }) {
   const map = {
     Live: { dot: "#22c55e", text: "text-green-400", bg: "bg-green-500/10 border-green-500/30" },
-    "En desarrollo": { dot: "#f59e0b", text: "text-amber-400", bg: "bg-amber-500/10 border-amber-500/30" },
-    Completado: { dot: "#60a5fa", text: "text-blue-400", bg: "bg-blue-500/10 border-blue-500/30" },
+    "In Development": { dot: "#f59e0b", text: "text-amber-400", bg: "bg-amber-500/10 border-amber-500/30" },
+    Completed: { dot: "#60a5fa", text: "text-blue-400", bg: "bg-blue-500/10 border-blue-500/30" },
   };
   const s = map[status];
   return (
@@ -85,7 +85,7 @@ export default function ProjectCard({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/30 hover:text-white transition-colors"
-                      title="Visitar Proyecto"
+                      title="Visit Project"
                     >
                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -140,8 +140,8 @@ export default function ProjectCard({
                      <svg className="w-10 h-10 mb-3 opacity-30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                      </svg>
-                     <span className="text-sm font-medium tracking-wide px-4 text-center">Añadir Video Demo Desktop</span>
-                     <span className="text-[10px] text-white/10 mt-1 uppercase tracking-widest">(Formato 16:9)</span>
+                     <span className="text-sm font-medium tracking-wide px-4 text-center">Add Desktop Demo Video</span>
+                     <span className="text-[10px] text-white/10 mt-1 uppercase tracking-widest">(16:9 Format)</span>
                   </div>
                 )}
               </div>
@@ -152,7 +152,7 @@ export default function ProjectCard({
           <div className="w-full lg:w-[400px] xl:w-[480px] flex-shrink-0">
             <div className="flex items-center justify-between mb-3">
               <h4 className="text-sm font-medium text-white/70">
-                Vista previa <span className="text-white/30 text-xs ml-1">({project.images.length})</span>
+                Preview <span className="text-white/30 text-xs ml-1">({project.images.length})</span>
               </h4>
               {/* <button
                 onClick={() => onAddImage(index)}
@@ -196,7 +196,7 @@ export default function ProjectCard({
                       {i === 3 && project.images.length > 4 && (
                         <div className="absolute inset-0 bg-black/60 z-20 flex flex-col items-center justify-center backdrop-blur-[2px] border border-white/10">
                           <span className="text-white text-2xl font-black">+{project.images.length - 4}</span>
-                          <span className="text-white/60 text-xs font-semibold uppercase tracking-widest mt-1">Ver todos</span>
+                          <span className="text-white/60 text-xs font-semibold uppercase tracking-widest mt-1">View all</span>
                         </div>
                       )}
 

@@ -10,7 +10,7 @@ import ProjectCard, { Project, isVideo } from "../components/ProjectCard";
 
 const skills = [
   {
-    category: "Artificial Intelligence & Automatization ",
+    category: "Artificial Intelligence & Automation ",
     icon: "⬢",
     techs: ["RAG", "LangChain", "LangGraph", "Ollama", "n8n", "OpenAI", "Selenium", "Playwright"],
   },
@@ -30,7 +30,7 @@ const skills = [
     techs: ["Docker", "AWS", "Azure", "Git", "CI/CD", "Cloudflare", "Vercel", "Ubuntu", "Windows Server", "Cisco"],
   },
   {
-    category: "Lenguajes",
+    category: "Languages",
     icon: "⟨/⟩",
     techs: ["JavaScript", "TypeScript", "Python", "Dart", "SQL", "Rust", "Java", "PHP", "Kotlin", "C#", "C++", "C"],
   },
@@ -41,12 +41,12 @@ const skills = [
 const projects: Project[] = [
   {
     name: "Joseate",
-    tagline: "Red de Referidos",
+    tagline: "Referral Network",
     description:
-      "El proyecto más ambicioso que he construido. Una plataforma completa de conexión entre reclutadores, candidatos y empresas BPO en la República Dominicana. Incluye sistema de referidos con tracking en tiempo real, pagos automatizados, dashboards analíticos y gestión de colocaciones masivas.",
+      "The most ambitious project I have built. A complete platform connecting recruiters, candidates, and BPO companies in the Dominican Republic. Includes real-time tracking referral system, automated payments, analytical dashboards, and mass placement management.",
     tags: ["React", "Javascript","Express", "MongoDB", "WebSockets", "Cloudflare"],
     status: "Live",
-    scale: "Plataforma Web de Referidos",
+    scale: "Referral Web Platform",
     images: ["/joseate/HomeJoseate.png","/joseate/Jobs.png","/joseate/Apply.png","/joseate/Chat.png"],
     color: "from-amber-500/10 to-orange-600/10",
     accent: "#f59e0b",
@@ -91,12 +91,12 @@ const projects: Project[] = [
   // },
   {
     name: "Shopify Theme Dev",
-    tagline: "Desarrollo de Temas E-commerce Premium",
+    tagline: "Premium E-commerce Theme Development",
     description:
-      "Diseño y desarrollo de Shopify Thems & NextJS Stores completamente personalizados para clientes en mercados de productos importados. Desde tiendas de moda hasta electrónicos, optimizados para conversión con tasas de carga ultrarrápidas y experiencias de compra inmersivas.",
+      "Design and development of fully customized Shopify Themes & NextJS Stores for clients in imported product markets. From fashion stores to electronics, optimized for conversion with ultra-fast loading rates and immersive shopping experiences.",
     tags: ["Liquid", "JavaScript", "Shopify API", "CSS", "Performance", "NextJS"],
     status: "Live",
-    scale: "Freelance / Agencia",
+    scale: "Freelance / Agency",
     images: [],
     color: "from-green-500/10 to-emerald-600/10",
     accent: "#008f21ff",
@@ -104,12 +104,12 @@ const projects: Project[] = [
   },
   {
     name: "Clinica Jarabacoa",
-    tagline: "Sistema de Gestión Clínica Integral",
+    tagline: "Comprehensive Clinical Management System",
     description:
-      "Sistema completo de gestión hospitalaria para la Clínica  Cardiológica de Jarabacoa. Módulos de pacientes, citas, historiales médicos digitales, facturación, inventario de farmacia e informes estadísticos. Transformando la operación clínica de papel a digital.",
-    tags: ["Flutter", "Arquitectura en capas", "Supabase", "Docker", "Windows/Linux/Mac"],
+      "Complete hospital management system for the Cardiology Clinic of Jarabacoa. Modules for patients, appointments, digital medical records, billing, pharmacy inventory, and statistical reports. Transforming clinical operations from paper to digital.",
+    tags: ["Flutter", "Layered Architecture", "Supabase", "Docker", "Windows/Linux/Mac"],
     status: "Live",
-    scale: "Sistema Desktop Clinico",
+    scale: "Clinical Desktop System",
     images: ["/clinica/LoginClinica.png", "/clinica/DatabaseClinica.png", "/clinica/paciente.png", "/clinica/agenda.png"],
     color: "from-sky-500/10 to-blue-600/10",
     accent: "#0ea5e9",
@@ -130,11 +130,11 @@ const projects: Project[] = [
   // },
   {
     name: "Talkify",
-    tagline: "Web para intercambio de Idiomas",
+    tagline: "Language Exchange Web App",
     description:
-      "Talkify es una plataforma digital diseñada para facilitar el aprendizaje de idiomas mediante la interacción directa entre personas de distintas lenguas y culturas. A diferencia de las metodologías tradicionales, Talkify integra videollamadas, chat y herramientas educativas en un solo entorno, fomentando la práctica real y la inmersión lingüística. Su objetivo principal es crear un espacio seguro, accesible y motivador donde los usuarios puedan desarrollar habilidades comunicativas a través de experiencias sociales auténticas.(The API for the picture profile was closed btw)",
+      "Talkify is a digital platform designed to facilitate language learning through direct interaction between people of different languages and cultures. Unlike traditional methodologies, Talkify integrates video calls, chat, and educational tools in a single environment, encouraging real practice and linguistic immersion. Its main objective is to create a safe, accessible, and motivating space where users can develop communication skills through authentic social experiences. (The API for the picture profile was closed btw)",
     tags: ["React", "ExpressJS", "Tailwind CSS", "MongoDB", "noSQL", "Cloudinary", "WebSockets", "JWT", "tanstack", "Axios", "DaisyUI", "Stream-io"],
-    status: "Completado",
+    status: "Completed",
     scale: "Web",
     images: ["/talkify/videocall1.png", "/talkify/DFDTalkify.png", "/talkify/ERTalkify.png", "/talkify/Chat.png"], 
     color: "from-lime-200/10 to-stone-100/10",
@@ -145,12 +145,12 @@ const projects: Project[] = [
   },
   {
     name: "SLAM ",
-    tagline: "Investigación en Localización y Mapeo Simultáneo",
+    tagline: "Simultaneous Localization and Mapping Research",
     description:
-      "Investigación aplicada en Simultaneous Localization and Mapping (SLAM) para robótica autónoma. Implementación de algoritmos de última generación para navegación en entornos no estructurados, presentado como proyecto de investigación universitaria.",
+      "Applied research in Simultaneous Localization and Mapping (SLAM) for autonomous robotics. Implementation of state-of-the-art algorithms for navigation in unstructured environments, presented as a university research project.",
     tags: ["Python", "ROS", "OpenCV", "C++", "Robotics"],
-    status: "Completado",
-    scale: "Investigación Académica",
+    status: "Completed",
+    scale: "Academic Research",
     images: ["slam/SlamAplicaciones.png","slam/quizz.png","slam/SlamArq.png","slam/videolidar.gif"],
     color: "from-rose-500/10 to-pink-600/10",
     accent: "#f43f5e",
@@ -207,9 +207,9 @@ function AddImageModal({
         style={{ background: "rgba(15,15,20,0.95)" }}
         onClick={(e) => e.stopPropagation()}
       >
-        <h3 className="text-white font-semibold text-lg mb-1">Agregar recurso (Imagen/Video)</h3>
+        <h3 className="text-white font-semibold text-lg mb-1">Add resource (Image/Video)</h3>
         <p className="text-white/40 text-sm mb-5">
-          Proyecto: <span className="text-white/60">{projectName}</span>
+          Project: <span className="text-white/60">{projectName}</span>
         </p>
         <input
           type="url"
@@ -224,13 +224,13 @@ function AddImageModal({
             onClick={onClose}
             className="flex-1 py-2.5 rounded-xl border border-white/15 text-white/50 text-sm hover:text-white hover:border-white/30 transition-all"
           >
-            Cancelar
+            Cancel
           </button>
           <button
             onClick={() => { if (url.trim()) { onAdd(url.trim()); onClose(); } }}
             className="flex-1 py-2.5 rounded-xl bg-white text-black text-sm font-medium hover:bg-white/90 transition-all"
           >
-            Agregar
+            Add
           </button>
         </div>
       </div>
@@ -293,14 +293,14 @@ function Lightbox({
             disabled={state.imageIdx === 0}
             className="px-4 py-2 rounded-xl border border-white/15 text-white/50 hover:text-white hover:border-white/30 transition-all disabled:opacity-30 flex items-center gap-2"
           >
-            <span>←</span> Anterior
+            <span>←</span> Previous
           </button>
           <button
             onClick={onNext}
             disabled={state.imageIdx >= project.images.length - 1}
             className="px-4 py-2 rounded-xl border border-white/15 text-white/50 hover:text-white hover:border-white/30 transition-all disabled:opacity-30 flex items-center gap-2"
           >
-             Siguiente <span>→</span>
+             Next <span>→</span>
           </button>
         </div>
       </div>
@@ -361,7 +361,7 @@ export default function Portfolio() {
               {/* Availability badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-red-500/25 bg-red-500/8 text-red-300 text-xs mb-8">
                 <span className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />
-                Ocupado — Desarrollando e Investigando
+                Busy — Developing and Researching
               </div>
 
               {/* Name */}
@@ -381,16 +381,15 @@ export default function Portfolio() {
 
               {/* Role */}
               <p className="text-lg text-white/40 font-light mb-8 tracking-wide">
-                <span className="text-amber-300/80 font-medium">Ingeniero de Software</span>
+                <span className="text-amber-300/80 font-medium">Software Engineer</span>
                 {" "}&amp;{" "}
-                <span className="text-white/50">Investigador Independiente</span>
+                <span className="text-white/50">Independent Researcher</span>
               </p>
 
               {/* Bio */}
               <p className="text-white/55 text-base leading-relaxed max-w-lg mb-10">
-                Analizo problemas complejos en soluciones tecnológicas con visión de negocio.
-                Combino ingeniería de software con estrategias de negocios para construir productos
-                que escalan en mercados locales e internacionales. Tambien estudio temas en concretos y hacer presentaciones web dinamicas sobre ellas haha.
+                I analyze complex problems into technological solutions with a business vision.
+                I combine software engineering with business strategies to build products that scale in local and international markets. I also study specific topics and make dynamic web presentations about them haha.
               </p>
 
               {/* CTA buttons */}
@@ -403,7 +402,7 @@ export default function Portfolio() {
                   }}
                   className="px-7 py-3 bg-white text-black rounded-full font-medium text-sm hover:bg-white/90 transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]"
                 >
-                  Ver Proyectos
+                  View Projects
                 </a>
                 {/* <a
                   href="#contact"
@@ -462,8 +461,8 @@ export default function Portfolio() {
                     <span className="mx-3">=</span>
                     <span>√π</span>
                   </div>
-                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Integral Gaussiana </div>
-                  <div className="relative z-10 text-[10px] text-white/40">En producción</div>
+                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Gaussian Integral </div>
+                  <div className="relative z-10 text-[10px] text-white/40">In production</div>
                 </div>
 
                 {/* 2. Bottom Left Card - Sky Blue */}
@@ -473,8 +472,8 @@ export default function Portfolio() {
                 >
                   <div className="absolute inset-0 bg-sky-500/5 blur-xl rounded-2xl pointer-events-none" />
                   <div className="relative z-10 text-3xl md:text-4xl font-black text-sky-400 mb-1 drop-shadow-[0_0_8px_rgba(14,165,233,0.4)]">3+</div>
-                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Años de Exp.</div>
-                  <div className="relative z-10 text-[10px] text-white/40">Desarrollo profesional</div>
+                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Years of Exp.</div>
+                  <div className="relative z-10 text-[10px] text-white/40">Professional development</div>
                 </div>
 
                 {/* 3. Top Right Card - Rose/Pink */}
@@ -484,8 +483,8 @@ export default function Portfolio() {
                 >
                   <div className="absolute inset-0 bg-rose-500/5 blur-xl rounded-2xl pointer-events-none" />
                   <div className="relative z-10 text-3xl md:text-4xl font-black text-rose-400 mb-1 drop-shadow-[0_0_8px_rgba(244,63,94,0.4)]">30+</div>
-                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Tecnologías</div>
-                  <div className="relative z-10 text-[10px] text-white/40">Dominios variados</div>
+                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Technologies</div>
+                  <div className="relative z-10 text-[10px] text-white/40">Varied domains</div>
                 </div>
 
                 {/* 4. Bottom Right Card - Teal */}
@@ -495,8 +494,8 @@ export default function Portfolio() {
                 >
                   <div className="absolute inset-0 bg-teal-500/5 blur-xl rounded-2xl pointer-events-none" />
                   <div className="relative z-10 text-3xl md:text-4xl font-black text-teal-400 mb-1 drop-shadow-[0_0_8px_rgba(20,184,166,0.4)]">6</div>
-                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Industrias</div>
-                  <div className="relative z-10 text-[10px] text-white/40">Salud, E-commerce, etc</div>
+                  <div className="relative z-10 text-xs font-medium text-white/80 mb-0.5">Industries</div>
+                  <div className="relative z-10 text-[10px] text-white/40">Health, E-commerce, etc</div>
                 </div>
               </Planet>
             </div>
@@ -516,8 +515,8 @@ export default function Portfolio() {
         <section className="py-24 px-6 md:px-16 lg:px-28">
           <div className="max-w-7xl mx-auto">
             <div className="mb-14">
-              <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Stack Tecnológico</span>
-              <h2 className="text-4xl font-bold text-white mt-2">Tecnologías</h2>
+              <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Tech Stack</span>
+              <h2 className="text-4xl font-bold text-white mt-2">Technologies</h2>
             </div>
             <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
               {skills.map((skill, idx) => (
@@ -551,10 +550,10 @@ export default function Portfolio() {
             {/* Section header */}
             <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
               <div>
-                <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Portafolio</span>
-                <h2 className="text-4xl font-bold text-white mt-2">Proyectos</h2>
+                <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Portfolio</span>
+                <h2 className="text-4xl font-bold text-white mt-2">Projects</h2>
                 <p className="text-white/40 mt-2 text-sm max-w-md">
-                  Cada proyecto es una solución real a un problema real. Explóralos, mira los detalles.
+                  Every project is a real solution to a real problem. Explore them, see the details.
                 </p>
               </div>
               <div className="flex gap-4 text-xs text-white/30">
@@ -562,10 +561,10 @@ export default function Portfolio() {
                   <span className="w-1.5 h-1.5 bg-green-400 rounded-full" /> Live
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 bg-amber-400 rounded-full" /> En desarrollo
+                  <span className="w-1.5 h-1.5 bg-amber-400 rounded-full" /> In Development
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 bg-blue-400 rounded-full" /> Completado
+                  <span className="w-1.5 h-1.5 bg-blue-400 rounded-full" /> Completed
                 </span>
               </div>
             </div>
@@ -586,7 +585,7 @@ export default function Portfolio() {
             {/* Mensaje de más proyectos */}
             <div className="mt-16 mb-8 text-center flex items-center justify-center gap-4 text-white/40 opacity-80">
               <div className="h-px w-16 md:w-32 bg-gradient-to-r from-transparent to-white/20" />
-              <p className="font-mono text-xl tracking-widest uppercase">¡Y hay muchos otros más!</p>
+              <p className="font-mono text-xl tracking-widest uppercase">And there are many more!</p>
               <div className="h-px w-16 md:w-32 bg-gradient-to-l from-transparent to-white/20" />
             </div>
           </div>
@@ -601,19 +600,19 @@ export default function Portfolio() {
               className="rounded-3xl border border-white/10 p-12 md:p-16 text-center"
               style={{ background: "rgba(255,255,255,0.03)", backdropFilter: "blur(12px)" }}
             >
-              <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Trabajemos juntos</span>
+              <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Let's work together</span>
               <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">
-                ¿Tienes un proyecto en mente?
+                Have a project in mind?
               </h2>
               <p className="text-white/45 text-lg mb-10 max-w-lg mx-auto">
-                Desde startups hasta empresas consolidadas — construyamos algo que importe.
+                From startups to established companies — let's build something that matters.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 <a
                   href="mailto:enmanuel@example.com"
                   className="px-8 py-3.5 bg-white text-black rounded-full font-medium hover:bg-white/90 transition-all hover:scale-105"
                 >
-                  Enviar Email
+                  Send Email
                 </a>
                 {/* <a
                   href="#"
