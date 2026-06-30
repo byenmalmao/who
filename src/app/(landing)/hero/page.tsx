@@ -89,19 +89,19 @@ const projects: Project[] = [
   //   color: "from-green-500/20 to-emerald-600/10",
   //   accent: "#10b981",
   // },
-  {
-    name: "Shopify Theme Dev",
-    tagline: "Premium E-commerce Theme Development",
-    description:
-      "Design and development of fully customized Shopify Themes & NextJS Stores for clients in imported product markets. From fashion stores to electronics, optimized for conversion with ultra-fast loading rates and immersive shopping experiences.",
-    tags: ["Liquid", "JavaScript", "Shopify API", "CSS", "Performance", "NextJS"],
-    status: "Live",
-    scale: "Freelance / Agency",
-    images: [],
-    color: "from-green-500/10 to-emerald-600/10",
-    accent: "#008f21ff",
-    url: "#",
-  },
+  // {
+  //   name: "Shopify Theme Dev",
+  //   tagline: "Premium E-commerce Theme Development",
+  //   description:
+  //     "Design and development of fully customized Shopify Themes & NextJS Stores for clients in imported product markets. From fashion stores to electronics, optimized for conversion with ultra-fast loading rates and immersive shopping experiences.",
+  //   tags: ["Liquid", "JavaScript", "Shopify API", "CSS", "Performance", "NextJS"],
+  //   status: "Live",
+  //   scale: "Freelance / Agency",
+  //   images: [],
+  //   color: "from-green-500/10 to-emerald-600/10",
+  //   accent: "#008f21ff",
+  //   url: "#",
+  // },
   {
     name: "Clinica Jarabacoa",
     tagline: "Comprehensive Clinical Management System",
