@@ -594,52 +594,7 @@ export default function Portfolio() {
         {/* ═══════════════════════════════════════════════════════════════════
             CONTACT
         ═══════════════════════════════════════════════════════════════════ */}
-        <section id="contact" className="py-24 px-6 md:px-16 lg:px-28">
-          <div className="max-w-7xl mx-auto">
-            <div
-              className="rounded-3xl border border-white/10 p-12 md:p-16 text-center"
-              style={{ background: "rgba(255,255,255,0.03)", backdropFilter: "blur(12px)" }}
-            >
-              <span className="text-xs font-mono text-white/30 tracking-widest uppercase">Let's work together</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">
-                Have a project in mind?
-              </h2>
-              <p className="text-white/45 text-lg mb-10 max-w-lg mx-auto">
-                From startups to established companies — let's build something that matters.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 mb-12">
-                <a
-                  href="mailto:enmanuel@example.com"
-                  className="px-8 py-3.5 bg-white text-black rounded-full font-medium hover:bg-white/90 transition-all hover:scale-105"
-                >
-                  Send Email
-                </a>
-                {/* <a
-                  href="#"
-                  className="px-8 py-3.5 border border-white/20 text-white rounded-full font-medium hover:bg-white/8 hover:border-white/40 transition-all"
-                >
-                  Descargar CV
-                </a> */}
-              </div>
-              <div className="pt-8 border-t border-white/8 flex justify-center gap-8">
-                {[
-                  { label: "GitHub", href: "#" },
-                  { label: "LinkedIn", href: "#" },
-                  { label: "Twitter / X", href: "#" },
-                ].map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    className="text-sm text-white/30 hover:text-white/70 transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
+       
       </div>
     </>
   );
